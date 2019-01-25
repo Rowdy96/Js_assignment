@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Assignment</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+	</head>
+	
+	<body>
+		<form action="" method="post">
+		<div class="section">
+			<label for="firstName">First Name:</label>
+			<input id="firstName" type="text" name="FirstName"/> 
+		</div>	
+		
+		<div class="section">
+			<label for="lastName">Last Name:</label>
+			<input id="lastName" type="text" name="LastName"/> 
+		</div>
+		
+		<div class="section">
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="Email"/> 
+		</div >
+		
+		<div class="section">
+			<label for="contact">Contact:</label>
+			<input id="contact" type="tel" name="Phone"/> 
+		</div>
+		
+		<div class="section">
+			<label for="address">Address:</label>
+			<textarea id="address" name="Address"></textarea> 
+		</div>
+		
+		<div class="section">
+			<label for="Uname">Username:</label>
+			<input type="text" id="Uname" name="UserName"/>
+		</div>
+		
+		<div class="section">
+			<label for="pwd">Password:</label>
+			<input type="password" id="pwd" name="Password"/>
+		</div>
+		
+		<div class="section">
+			<label>Gender:</label>
+			<label for="male"><input type="radio" id="male" name="Gender" onclick="getGender()"/>Male</label>
+			<label for="female"><input type="radio" id="female" name="Gender"onclick="getGender()"/>Female</label>
+		</div>
+		
+		<div class="section">
+			<label for="qualification">Qualification:</label>
+			<select id="qualification"></select>
+			
+			<label for="experience">Experience:</label>
+			<select id="experience"></select>
+			
+		</div>
+		
+		<div class="section">
+			<label>Coding Languages:</label>
+			<input type="checkbox"  name="Languages" id="c" onclick="getValue('C/C++')"/><label id="c/c++" class="code"></label><br>
+			<input type="checkbox"  name="Languages" id="j" onclick="getValue('Java')"/><label id="java" class="code"></label><br>
+			<input type="checkbox"  name="Languages" id="c1" onclick="getValue('C#')"/ ><label id="c#" class="code"></label><br>
+			<input type="checkbox"  name="Languages" id="p" onclick="getValue('PHP')"/><label id="php" class="code"></label><br>
+			<input type="checkbox"  name="Languages" id="py" onclick="getValue('Python')"/><label id="python" class="code"></label><br>
+			
+		</div>
+		
+		
+			
+		<div class="section">
+			
+			<input type="button" onclick="details()" value="Click Me"/>
+		</div>
+		
+		</form>
+		
+		<script type="text/javascript" src="script.js">
+		
+		</script>
+		
+	</body>
+
+</html>
